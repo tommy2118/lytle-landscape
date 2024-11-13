@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Lytle Landscape Construction</title>
+    <meta name="description" content="Explore our portfolio of landscape designs and projects, crafted with care and precision in Orange County, CA." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- GLightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+    <style>
+        /* Custom styling */
+        .hero-section {
+            position: relative;
+            background: url('public/subheader1.jpg') center/cover no-repeat;
+            color: white;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .swiper-slide img {
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Hero Section with Overlay -->
+    <section class="hero-section text-center p-10 md:p-20 shadow-lg">
+        <div class="hero-content">
+            <h1 class="text-4xl md:text-5xl font-bold">Our Craftsmanship Gallery</h1>
+            <p class="mt-4 text-lg md:text-2xl">Experience the artistry and attention to detail that defines Lytle Landscape Construction. Each project is a testament to our dedication to quality and design excellence.</p>
+        </div>
+    </section>
+
+    <!-- Carousel Container -->
+    <main class="container mx-auto py-10 px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Explore Our Work</h2>
+        <p class="text-center max-w-2xl mx-auto mb-8 text-gray-600">
+            Each project is crafted to seamlessly blend aesthetics with functionality. Browse through our gallery to see how our design philosophy brings harmony and elegance to every outdoor space.
+        </p>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <a href="public/2014-10-06-13.25.06-1-250x250.jpg" class="glightbox" data-gallery="gallery" data-title="Crafted Stonework Gate" data-description="A stone pillar gate designed to be both welcoming and secure. Perfectly aligned for beauty and durability.">
+                        <img src="public/2014-10-06-13.25.06-1-250x250.jpg" alt="Gate with stone pillars" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <a href="public/2014-10-27-14.58.57-1-250x250.jpg" class="glightbox" data-gallery="gallery" data-title="Elegant Walkway" data-description="An elegant walkway with natural stone to enhance the entrance. Blending nature with architectural design.">
+                        <img src="public/2014-10-27-14.58.57-1-250x250.jpg" alt="Pathway with stone accents" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <a href="public/20170302_133920-1-250x250.jpg" class="glightbox" data-gallery="gallery" data-title="Native Plant Landscaping" data-description="A low-maintenance front yard featuring native plants for sustainable beauty.">
+                        <img src="public/20170302_133920-1-250x250.jpg" alt="Front yard with native plants" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <a href="public/20170302_133938-1-250x250.jpg" class="glightbox" data-gallery="gallery" data-title="Sustainable Landscape Design" data-description="A blend of gravel and plants designed to thrive in dry climates while offering aesthetic appeal.">
+                        <img src="public/20170302_133938-1-250x250.jpg" alt="Landscape with gravel and plants" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <a href="public/20170505_151435-700x525.jpg" class="glightbox" data-gallery="gallery" data-title="Vegetable Garden Beds" data-description="Raised beds thoughtfully arranged for easy access and abundant growth, adding practicality to beauty.">
+                        <img src="public/20170505_151435-700x525.jpg" alt="Vegetable garden beds" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <a href="public/20170602_145102-1-700x525.jpg" class="glightbox" data-gallery="gallery" data-title="Pathway through Landscape" data-description="An inviting path framed by low-maintenance plants that complements the overall garden design.">
+                        <img src="public/20170602_145102-1-700x525.jpg" alt="Pathway through landscaped garden" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <a href="public/b415f5695165fea2977995c6d0b3d08a-flowers-garden-succulents-garden.jpg" class="glightbox" data-gallery="gallery" data-title="Succulent Garden" data-description="A vibrant succulent garden featuring diverse textures and colors for a modern, low-maintenance look.">
+                        <img src="public/b415f5695165fea2977995c6d0b3d08a-flowers-garden-succulents-garden.jpg" alt="Succulent garden with various plants" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <a href="public/Bruck1-700x525.jpeg" class="glightbox" data-gallery="gallery" data-title="Desert Oasis Patio" data-description="A desert-inspired patio with drought-tolerant plants and decorative pathways for a tranquil space.">
+                        <img src="public/Bruck1-700x525.jpeg" alt="Desert oasis patio design" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 9 -->
+                <div class="swiper-slide">
+                    <a href="public/Bruck3-700x525.jpeg" class="glightbox" data-gallery="gallery" data-title="Pathway Garden" data-description="A carefully crafted pathway through a landscaped area that showcases natural beauty.">
+                        <img src="public/Bruck3-700x525.jpeg" alt="Pathway garden with plants" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 10 -->
+                <div class="swiper-slide">
+                    <a href="public/Bruck4-700x525.jpeg" class="glightbox" data-gallery="gallery" data-title="Stone Walkway" data-description="A beautifully laid stone walkway framed by desert-friendly plants, ideal for dry climates.">
+                        <img src="public/Bruck4-700x525.jpeg" alt="Stone walkway with desert plants" class="w-full">
+                    </a>
+                </div>
+
+                <!-- Slide 11 -->
+                <div class="swiper-slide">
+                    <a href="public/dbd4f382ffea885a9dc5e30519256e67-stone-steps-stone-pathways.jpg" class="glightbox" data-gallery="gallery" data-title="Stone Steps" data-description="Elegant stone steps surrounded by lush greenery, blending architecture with nature.">
+                        <img src="public/dbd4f382ffea885a9dc5e30519256e67-stone-steps-stone-pathways.jpg" alt="Stone steps with succulents" class="w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </main>
+
+    <div class="container mx-auto mt-4 py-10 px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Our Design Philosophy</h2>
+        <p class="text-center max-w-2xl mx-auto mb-8 text-gray-600">
+            At Lytle Landscape Construction, we believe that every outdoor space should be a reflection of your unique style and personality. Our design philosophy is centered around creating beautiful, functional landscapes that enhance your lifestyle and bring joy to your everyday life.
+        </p>
+    </div>
+
+    <footer class="bg-green-900 text-white py-8 text-center">
+        <p class="text-lg">Contact us at (949) 525-7929 | Email: <a href="mailto:LytleLandscape@aol.com" class="text-green-300 hover:underline">LytleLandscape@aol.com</a></p>
+        <p class="text-sm text-gray-300 mt-4">© 2024 Lytle Landscape and Construction. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Initialize Swiper and GLightbox -->
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            spaceBetween: 10,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            }
+        });
+
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            zoomable: true,
+            autoplayVideos: true,
+        });
+    </script>
+</body>
+</html>
+
