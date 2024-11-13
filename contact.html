@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Lytle Landscape Construction</title>
+    <meta name="description" content="Contact Lytle Landscape Construction for professional landscape design in Orange County. Get in touch with our team to discuss your project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background: url('public/subheader1.jpg') center/cover no-repeat;
+            color: white;
+            padding: 4rem 2rem;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center p-10 md:p-20 shadow-lg relative">
+        <div class="hero-content">
+            <h1 class="text-4xl md:text-5xl font-bold">Get in Touch with Us</h1>
+            <p class="mt-4 text-lg md:text-2xl">We’d love to discuss your landscaping needs. Reach out today to start transforming your outdoor space!</p>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="bg-green-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Lytle Landscape and Construction</a>
+            <nav>
+                <a href="/" class="px-4">Home</a>
+                <a href="/about" class="px-4">About</a>
+                <a href="/services" class="px-4">Services</a>
+                <a href="gallery.html" class="px-4">Gallery</a>
+                <a href="/contact" class="px-4">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="container mx-auto py-10 px-4">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">Get in Touch</h2>
+        <p class="text-center mb-10 text-lg text-gray-600">Have questions about our services? Need a quote for your landscaping project? Fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <!-- Message Display -->
+        <div id="message-box" class="max-w-xl mx-auto mb-6"></div>
+
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <form id="contact-form" class="space-y-6" action="/submit-contact-form.php" method="POST">
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="mt-1 p-3 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-800 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Information Section -->
+    <section class="bg-gray-100 py-10 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Contact Information</h2>
+            <p class="text-gray-600 max-w-xl mx-auto mb-8">You can reach us via phone, email, or by visiting our office in Orange County. We're here to help you with any questions.</p>
+            <div class="space-y-4">
+                <p class="text-lg"><strong>Phone:</strong> <a href="tel:+19495257929" class="text-green-800 hover:underline">(949) 525-7929</a></p>
+                <p class="text-lg"><strong>Email:</strong> <a href="mailto:LytleLandscape@aol.com" class="text-green-800 hover:underline">LytleLandscape@aol.com</a></p>
+                <p class="text-lg"><strong>Address:</strong> 1234 Green St, Orange County, CA 92602</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="container mx-auto py-10 px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Our Location</h2>
+        <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+            <!-- Embed Google Map iframe for location in Irvine, Orange County -->
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.736282179159!2d-117.82650438479267!3d33.6845676807054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce9ab51a6e865%3A0xd7f4e2f19e4c7f71!2sIrvine%2C%20CA%2092618%2C%20USA!5e0!3m2!1sen!2sus!4v1700132944924!5m2!1sen!2sus"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="container mx-auto py-10 px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Ready to Start Your Project?</h2>
+        <p class="text-gray-600 max-w-xl mx-auto mb-8">
+            Fill out the form above or give us a call to discuss your landscaping needs. Our team is ready to help you bring your outdoor vision to life.
+        </p>
+        <a href="tel:+19495257929" class="bg-green-800 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-700 transition">Call Us Today</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8 text-center">
+        <p class="text-lg">Contact us at (949) 525-7929 | Email: <a href="mailto:LytleLandscape@aol.com" class="text-green-300 hover:underline">LytleLandscape@aol.com</a></p>
+        <p class="text-sm text-gray-300 mt-4">© 2024 Lytle Landscape and Construction. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for AJAX Form Submission -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const messageBox = document.getElementById("message-box");
+
+            try {
+                // Send form data using fetch API
+                const response = await fetch(this.action, {
+                    method: "POST",
+                    body: formData,
+                });
+
+                const result = await response.json();
+
+                // Handle the response
+                if (response.ok && result.status === "success") {
+                    messageBox.innerHTML = `<div class="bg-green-100 text-green-800 p-4 rounded-lg text-center">${result.message}</div>`;
+                    messageBox.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById("contact-form").reset(); // Clear the form
+                } else {
+                    messageBox.innerHTML = `<div class="bg-red-100 text-red-800 p-4 rounded-lg text-center">Error: ${result.message || "There was an issue sending your message."}</div>`;
+                    messageBox.scrollIntoView({ behavior: 'smooth' });
+                }
+            } catch (error) {
+                messageBox.innerHTML = `<div class="bg-red-100 text-red-800 p-4 rounded-lg text-center">There was an issue with your submission. Please try again later.</div>`;
+                console.error("Error submitting form:", error);
+            }
+        });
+    </script>
+
+</body>
+</html>
